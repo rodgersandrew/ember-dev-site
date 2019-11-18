@@ -1,0 +1,72 @@
+#headerNav {
+    background-color: #e5e5e5;
+}
+
+#brandImage {
+    height: 50px;
+}
+
+.jumbotron {
+    border-bottom: 2px solid rgba(143, 34, 9, 0.2);
+    border-top: 2px solid rgba(143, 34, 9, 0.2);
+    height: 30%;
+    background-image: url("../assets//jumbotron_bg.png");
+    background-size: cover;
+    min-height: 30vh;
+}
+
+.workTitle {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: #e5e5e5;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.iconify {
+    width: 24px;
+    height: 24px;
+}
+
+#upwork {
+    color: #37A000;
+}
+
+a:hover #upwork {
+    color: #6FDA44;
+}
+
+#linkedIn {
+    color: #1977B5;
+}
+
+a:hover #linkedIn {
+    color: #1f9ede;
+}
+
+#stackContainer {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.row i {
+    
+    font-size: 5em;
+    color: #fff
+}
+
+.stackIcon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 5%
+}
+
+.carousel-inner {
+    background-color: #3D3D3D;
+    border: 2px solid rgba(82, 0, 0, 0.589);
+}
