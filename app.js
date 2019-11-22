@@ -2,12 +2,37 @@
 var isInViewport = function(elem) {
   var bounds = elem.getBoundingClientRect();
   var top = bounds.top;
-  console.log(top);
   return (
     top <
     (window.innerHeight / 1.5 || document.documentElement.clientHeight / 1.5)
   );
 };
+
+// Navbar
+var scrolledHeader = false;
+
+$(function() {
+  $(document).scroll(function() {
+    var $nav = $('#headerNav');
+    var $socials = $('')
+    var $brand = $('#brandImage');
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+    if (!scrolledHeader && $(this).scrollTop() > $nav.height()) {
+      $brand
+        .fadeOut(200, function() {
+          $brand.attr('src', './assets/images/ember-logo-white.png');
+        })
+        .fadeIn(200);
+      scrolledHeader = true;
+    }
+
+    if (scrolledHeader && $(this).scrollTop() < $nav.height()) {
+      $brand.attr('src', './assets/images/ember_logo_red.png');
+      scrolledHeader = false;
+    }
+  });
+});
 
 // Projects Handler
 
@@ -46,19 +71,22 @@ projectCards.forEach(cardContainer => {
   });
 });
 
+projectsNotVisible = true;
+cardsNotVisible = true;
 window.onscroll = () => {
-  if (isInViewport(projects)) {
+  if (isInViewport(projects) && projectsNotVisible) {
     projectsTitle.classList.add('animated', 'fadeInRight', 'fast');
     projectsRule.classList.add('animated', 'fadeInRightBig');
-
+    projectsNotVisible = false;
   }
-  if (isInViewport(projectCards[0])) {
+  if (isInViewport(projectCards[0]) && cardsNotVisible) {
     var counter = 0;
-    setInterval(function() {
+    var i = setInterval(function() {
       projectCards[counter].classList.add('animated', 'fadeInUp');
 
       counter++;
-      if (counter === projectCards.length - 1) {
+      if (counter === projectCards.length) {
+        cardsNotVisible = false;
         clearInterval(i);
       }
     }, 100);
