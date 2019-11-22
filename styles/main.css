@@ -10,7 +10,7 @@
     border-bottom: 2px solid rgba(143, 34, 9, 0.2);
     border-top: 2px solid rgba(143, 34, 9, 0.2);
     height: 30%;
-    background-image: url("../assets//jumbotron_bg.png");
+    background-image: url("../assets/images/jumbotron_bg.png");
     background-size: cover;
     min-height: 30vh;
 }
@@ -20,9 +20,9 @@
     font-weight: 300;
     font-size: 2.4rem;
     color: #e5e5e5;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-        0px 8px 13px rgba(0,0,0,0.1),
-        0px 18px 23px rgba(0,0,0,0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .iconify {
@@ -52,7 +52,7 @@ a:hover #linkedIn {
 }
 
 .row i {
-    
+
     font-size: 5em;
     color: #fff
 }
@@ -62,11 +62,47 @@ a:hover #linkedIn {
     padding-bottom: 15px;
 }
 
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next,
+.carousel-control-prev {
     width: 5%
 }
 
 .carousel-inner {
-    background-color: #3D3D3D;
+    background-color: #863a31;
     border: 2px solid rgba(82, 0, 0, 0.589);
+}
+
+.portfolioImg {
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.divider {
+    width: 200px;
+    height: 2px;
+    background-color: #623733;
+}
+
+.projectCard {
+    background-color: #fff;
+    min-height: 325px;
+}
+
+.projectTitle {
+    font-family: 'Raleway';
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.projectStack {
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.projectInfoBtn {
+    width: 35%;
+    z-index: 1;
+    opacity: 0;
 }

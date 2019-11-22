@@ -11,6 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:300,400,500&display=swap');
     </style>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -25,6 +26,9 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 
     <title>YelpCamp</title>
 </head>
@@ -32,8 +36,8 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-light" id="headerNav">
         <div class="container">
-            <a href="./index.html" class="navbar-brand"><img class="img-fluid" src="./assets/ember_logo_bolder.png"
-                    alt="" id='brandImage'></a>
+            <a href="./index.html" class="navbar-brand"><img class="img-fluid"
+                    src="./assets/images/ember_logo_bolder.png" alt="" id='brandImage'></a>
             <div class="navbar-nav ml-auto">
                 <div class="row mr-0" id="headerSocials">
                     <a class="nav-item nav-link" id="upworkLink" href="#"><span class="iconify mt-1" id="upwork"
@@ -42,15 +46,6 @@
                             data-icon="ant-design:linkedin-fill" data-inline="false"></span></a>
                 </div>
             </div>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#">Test 1</a>
-                    <a class="nav-item nav-link" href="#">Test 1</a>
-                </div>
-            </div> -->
         </div>
     </nav>
 
@@ -60,22 +55,9 @@
         <p class="lead text-white">Specializing in full-stack web and mobile development for all your needs</p>
     </div>
 
-    <!-- <div class="container">
-        <div class="row rounded px-3 justify-content-around text-center" id="stackContainer">
-            <div class="col-4 col-md-3 col-lg-1 stackIcon"><i class="devicon-bootstrap-plain-wordmark"></i></div>
-            <div class="col-4 col-md-3 col-lg-1 stackIcon"><i class="devicon-html5-plain-wordmark"></i></div>
-            <div class="col-4 col-md-3 col-lg-1 stackIcon"><i class="devicon-nodejs-plain-wordmark"></i></div>
-            <div class="col-4 col-md-3 col-lg-1 stackIcon"><i class="devicon-css3-plain-wordmark"></i></div>
-            <div class="col-4 col-md-3 col-lg-1 stackIcon"><i class="devicon-swift-plain-wordmark"></i></div>
-            <div class="col-4 col-md-3 col-lg-1 stackIcon"><i class="devicon-react-original-wordmark"></i></div>
-            <div class="col-4 col-md-3 col-lg-1 stackIcon"><i class="devicon-python-plain-wordmark"></i></div>
-            <div class="col-4 col-md-3 col-lg-1 stackIcon"><i class="devicon-mongodb-plain-wordmark"></i></div>
-
-        </div>
-    </div> -->
-
     <div class="container">
-        <div id="carouselExampleControls" class="carousel slide rounded" data-ride="carousel" data-interval="8000" data-pause="hover">
+        <div id="carouselExampleControls" class="carousel slide rounded" data-ride="carousel" data-interval="8000"
+            data-pause="hover">
             <div class="carousel-inner rounded">
                 <div class="carousel-item active">
                     <div class="row justify-content-around text-center" id="stackContainer">
@@ -106,22 +88,63 @@
                         </div>
                         <div class="col-4 col-md-3 col-lg stackIcon"><i class="devicon-express-original-wordmark"></i>
 
+                        </div>
                     </div>
-                </div>
 
-                <!-- <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                 <img class="d-block w-100" src="..." alt="Third slide">
               </div> -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
+
+        <!-- PROJECTS -->
+        <section class="my-5 text-center" id="projects">
+            <header class="display-4" id="projectsHeader">PROJECTS</header>
+            <hr class="divider" id="projectsRule">
+            <div class="row mt-5">
+                <div class="col-lg-4 px-0 text-center projectCard">
+                    <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                        <div class="mb-5 projectHeader">
+                            <h3 class="projectTitle text-danger">TRENDR</h3>
+                            <p class="projectStack">Python - Lambda - DynamoDB - React Native</p>
+                        </div>
+                        <a href="" class="btn btn-outline-danger projectInfoBtn">LEARN MORE</a>
+                    </div>
+                    <img class="portfolioImg position-absolute" src="./assets/images/trendr-card.png" alt="">
+
+                </div>
+                <div class="col-lg-4 px-0 text-center projectCard">
+                    <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                        <div class="mb-5 projectHeader">
+                            <h3 class="projectTitle text-danger">WordTrain</h3>
+                            <p class="projectStack">React Native</p>
+                        </div>
+                        <a href="" class="btn btn-outline-danger projectInfoBtn">LEARN MORE</a>
+                    </div>
+                    <img class="portfolioImg" src="./assets/images/wordtrain-card.png" alt="">
+                </div>
+                <div class="col-lg-4 px-0 text-center projectCard">
+                    <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                        <div class="mb-5 projectHeader">
+                            <h3 class="projectTitle text-danger">YelpCamp</h3>
+                            <p class="projectStack">Node.js - Express - MongoDB</p>
+                        </div>
+                        <a href="" class="btn btn-outline-danger projectInfoBtn">LEARN MORE</a>
+                    </div>
+                    <img class="portfolioImg" src="./assets/images/yelpcamp-card.png" alt="">
+                </div>
+            </div>
+        </section>
+
     </div>
 
 
