@@ -4,7 +4,8 @@ var isInViewport = function(elem) {
   var top = bounds.top;
   console.log(top);
   return (
-    top < (window.innerHeight / 2 || document.documentElement.clientHeight / 2)
+    top <
+    (window.innerHeight / 1.5 || document.documentElement.clientHeight / 1.5)
   );
 };
 
@@ -12,39 +13,54 @@ var isInViewport = function(elem) {
 
 // Projects -> Header -> Animation Handling
 const projects = document.querySelector('#projects');
-projects.setAttribute('style', 'opacity: 0;');
 const projectsHeader = document.querySelector('#projectsHeader');
+
+const projectsTitle = document.querySelector('#projectsTitle');
+projectsTitle.setAttribute('style', 'opacity: 0;');
 const projectsRule = document.querySelector('#projectsRule');
-
-window.onscroll = () => {
-  if (isInViewport(projects)) {
-    projects.classList.add('animated', 'fadeIn', 'slower');
-  }
-};
-
-// projectsHeader.classList.add('animated', 'fadeIn', 'slower');
-// projectsRule.classList.add('animated', 'fadeIn', 'slower');
+projectsRule.setAttribute('style', 'opacity: 0;');
 
 // Projects -> Cards -> Animation Handling
 const projectCards = document.querySelectorAll('.projectCard');
+
 projectCards.forEach(cardContainer => {
+  cardContainer.setAttribute('style', 'opacity: 0;');
   const cardImg = cardContainer.getElementsByTagName('img')[0];
   const projectHeader = cardContainer.querySelector('.projectHeader');
   const projectInfoBtn = cardContainer.querySelector('.projectInfoBtn');
 
   cardContainer.addEventListener('mouseover', () => {
-    cardImg.classList.add('animated', 'fadeOut');
-    projectHeader.classList.remove('animated', 'fadeOut');
-    projectHeader.classList.add('animated', 'fadeIn');
-    projectInfoBtn.classList.remove('animated', 'fadeOut');
-    projectInfoBtn.classList.add('animated', 'fadeIn');
+    cardImg.classList.add('animated', 'fadeOut', 'fast');
+    projectHeader.classList.remove('animated', 'fadeOutUp');
+    projectHeader.classList.add('animated', 'fadeInDown');
+    projectInfoBtn.classList.remove('animated', 'fadeOutDown');
+    projectInfoBtn.classList.add('animated', 'fadeInUp');
   });
   cardContainer.addEventListener('mouseout', () => {
-    cardImg.classList.remove('animated', 'fadeOut');
-    cardImg.classList.add('animated', 'fadeIn');
-    projectHeader.classList.remove('animated', 'fadeIn');
-    projectHeader.classList.add('animated', 'fadeOut');
-    projectInfoBtn.classList.remove('animated', 'fadeIn');
-    projectInfoBtn.classList.add('animated', 'fadeOut');
+    cardImg.classList.remove('animated', 'fadeOut', 'fast');
+    cardImg.classList.add('animated', 'fadeIn', 'fast');
+    projectHeader.classList.remove('animated', 'fadeInDown');
+    projectHeader.classList.add('animated', 'fadeOutUp');
+    projectInfoBtn.classList.remove('animated', 'fadeInUp');
+    projectInfoBtn.classList.add('animated', 'fadeOutDown');
   });
 });
+
+window.onscroll = () => {
+  if (isInViewport(projects)) {
+    projectsTitle.classList.add('animated', 'fadeInRight', 'fast');
+    projectsRule.classList.add('animated', 'fadeInRightBig');
+
+  }
+  if (isInViewport(projectCards[0])) {
+    var counter = 0;
+    setInterval(function() {
+      projectCards[counter].classList.add('animated', 'fadeInUp');
+
+      counter++;
+      if (counter === projectCards.length - 1) {
+        clearInterval(i);
+      }
+    }, 100);
+  }
+};

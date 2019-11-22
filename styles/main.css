@@ -1,3 +1,7 @@
+body {
+    padding-bottom: 15px;
+}
+
 #headerNav {
     background-color: #e5e5e5;
 }
@@ -28,6 +32,14 @@
 .iconify {
     width: 24px;
     height: 24px;
+}
+
+#github {
+    color: #24292E;
+}
+
+a:hover #github {
+    color: #9452F7;
 }
 
 #upwork {
@@ -78,11 +90,26 @@ a:hover #linkedIn {
     top: 0;
     left: 0;
 }
+#carouselStack {
+    padding-bottom: 60px;
+}
+#projects {
+    background-color: #f6f6f6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .divider {
     width: 200px;
     height: 2px;
     background-color: #623733;
+}
+
+.sectionTitle {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 2rem;
+    color: #24292E;
 }
 
 .projectCard {
@@ -95,6 +122,7 @@ a:hover #linkedIn {
     font-size: 1.75rem;
     font-weight: 500;
 }
+
 .projectStack {
     font-family: 'Raleway';
     font-size: 1rem;
