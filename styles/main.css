@@ -43,7 +43,7 @@ body {
     font-weight: 600;
     color: rgb(226, 226, 226);
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8),
-    0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 4px 3px rgba(0, 0, 0, 0.4),
         0px 8px 13px rgba(0, 0, 0, 0.1),
         0px 18px 23px rgba(0, 0, 0, 0.1);
 }
@@ -126,25 +126,41 @@ a:hover #linkedIn {
 }
 
 .row i {
-
-    font-size: 5em;
-    color: #fff
+    font-size: 2rem;
+    color: #fff;
 }
 
 .stackIcon {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 50px;
+    width: 50px;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-    width: 5%
+.stackRow {
+    background-color: #8d4c4c;
+    min-width: 200px;
 }
 
-.carousel-inner {
-    background-color: #863a31;
-    border: 2px solid rgba(82, 0, 0, 0.589);
+.stackTextCol {
+    background-color: #AA4C4C;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
+
+.stackTextContainer {
+    background-color: #AA4C4C;
+}
+
+.stackText {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 .portfolioImg {
     width: inherit;
@@ -153,33 +169,43 @@ a:hover #linkedIn {
     left: 0;
 }
 
-#carouselStack {
-    padding-bottom: 60px;
-}
-
 #about {
     background-color: #ffffff;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
+}
+
+#aboutMe {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#headshot {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5%;
 }
 
 #projects {
     background-color: #f6f6f6;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
 }
 
 .divider {
-    width: 200px;
-    height: 2px;
-    background-color: #623733;
+    width: 80px;
+    height: 3px;
+    background-color: #555;
 }
 
 .sectionTitle {
     font-family: 'Raleway';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2rem;
-    color: #24292E;
+    color: #555;
 }
 
 .projectCard {
@@ -203,4 +229,11 @@ a:hover #linkedIn {
     width: 35%;
     z-index: 1;
     opacity: 0;
+}
+
+/* Shadows */
+.shadow-inset-left {
+    -moz-box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
+    -webkit-box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
+    box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
 }
