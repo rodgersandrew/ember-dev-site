@@ -33,9 +33,19 @@ body {
 
 .main {
     height: 100vh;
-    background-image: url('../assets/images/jumbotron-bg.png');
+    background-image: url('../assets/images/main-bg-darker.png');
     background-size: cover;
 
+}
+
+.mainTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: rgb(226, 226, 226);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8),
+    0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 #mainDetails {
@@ -144,6 +154,12 @@ a:hover #linkedIn {
 }
 
 #carouselStack {
+    padding-bottom: 60px;
+}
+
+#about {
+    background-color: #ffffff;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
