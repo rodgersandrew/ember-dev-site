@@ -119,6 +119,20 @@ projectsNotVisible = true;
 cardsNotVisible = true;
 
 function animateAllComponents() {
+  // Navigation on reload
+  var $nav = $('#headerNav');
+  var $socials = $('');
+  var $brand = $('#brandImage');
+  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+  if (!scrolledHeader && $(this).scrollTop() > $nav.height()) {
+    $brand.attr('src', './assets/images/ember-logo-white.png');
+    scrolledHeader = true;
+  }
+  if (scrolledHeader && $(this).scrollTop() < $nav.height()) {
+    $brand.attr('src', './assets/images/ember_logo_red.png');
+  }
+
   // About Animation Handling
   if (isInViewport(about) && aboutNotVisible) {
     aboutTitle.classList.add('animated', 'fadeInRight', 'fast');
