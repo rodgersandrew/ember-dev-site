@@ -34,6 +34,7 @@ $(function() {
   });
 });
 
+
 // About Handler
 // About -> Header -> Init
 const about = document.querySelector('#about');
