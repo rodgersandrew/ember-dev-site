@@ -36,16 +36,50 @@
     <!-- The Modal -->
     <div id="modal" class="modal">
         <!-- Modal content -->
-        <div class="d-flex flex-column modal-content align-items-stretch">
-            <div class="flex-fill gallery">
-                <div class="slide"></div>
+        <div class="d-flex flex-row modal-content">
+            <div class="flex-fill px-0 gallery">
+                <!-- <div class="window">
+                    <div id="carousel" style="left: -281px;">
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                    <span class="iconify" data-icon="el:chevron-left" data-inline="false"></span>
+                    <span class="iconify" data-icon="el:chevron-right" data-inline="false"></span>
+                </div> -->
+                <div id="carouselControl" class="carousel slide" data-ride="carousel" data-interval="8000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="modalSlide"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="modalSlide"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="modalSlide"></div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselControl" role="button" data-slide="prev">
+                        <span class="iconify" data-icon="el:chevron-left" data-inline="false"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselControl" role="button" data-slide="next">
+                            <span class="iconify" data-icon="el:chevron-right" data-inline="false"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-            <div class="d-flex flex-column flex-fill infoContainer justify-content-center">
-                <div class="title"></div>
-                <div class="desc"></div>
-                <div class="details"></div>
+            <div class="flex-fill d-flex flex-column border-inset-left-dark infoContainer">
+                <span class="iconify close justify-self-start align-self-end" data-icon="ion:close-sharp"
+                    data-inline="false" id="modalClose"></span>
+                <div class="d-flex flex-fill flex-column justify-content-center px-5">
+                    <div class="title justify-self-center"></div>
+                    <div class="desc"></div>
+                    <div class="rule"></div>
+                    <div class="details"></div>
+                </div>
+
             </div>
-            <span class="close">&times;</span>
 
         </div>
 
@@ -75,8 +109,9 @@
 
     <!-- Main Header -->
     <div class="main d-flex justify-content-center align-items-center">
-        <div class="w-50 d-flex justify-content-center align-items-center text-center" id="mainDetails">
-            <h1 class="mainTitle">full stack web development.</h1>
+        <div class="w-50 d-flex flex-column justify-content-center align-items-center text-center" id="mainDetails">
+            <h1 class="mainTitle">full stack web and mobile development.</h1>
+            <!-- <h1 class="mainTitle">full stack web development.</h1> -->
         </div>
     </div>
 
@@ -178,7 +213,7 @@
                             <div class=" row stackRow d-flex h-100 align-items-center">
                                 <i class="devicon-express-original p-2"></i>
                                 <div class="col stackTextCol shadow-inset-left">
-                                    <p class="stackText">SWIFT</p>
+                                    <p class="stackText">EXPRESS</p>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +268,7 @@
                             <h3 class="projectTitle text-danger">YelpCamp</h3>
                             <p class="projectStack">Node.js - Express - MongoDB</p>
                         </div>
-                        <button class="btn btn-outline-danger projectInfoBtn" id="yelpcamp">LEARN MORE</button>
+                        <a href="" class="btn btn-outline-danger projectInfoBtn">LEARN MORE</a>
                     </div>
                     <img class="portfolioImg" src="./assets/images/yelpcamp-card.png" alt="">
                 </div>

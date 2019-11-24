@@ -63,7 +63,7 @@ body {
         0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.iconify {
+.navbar .iconify {
     width: 24px;
     height: 24px;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
@@ -238,15 +238,19 @@ a:hover #linkedIn {
     box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
 }
 
+.border-inset-left-dark {
+    box-shadow: inset 2px 0px 0px #555;
+}
+
 /* The Modal (background) */
 .modal {
     display: none;
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 1045;
     /* Sit on top */
-    padding-top: 80px;
+    padding-top: 65px;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -258,7 +262,7 @@ a:hover #linkedIn {
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.75);
     /* Black w/ opacity */
 }
 
@@ -266,36 +270,81 @@ a:hover #linkedIn {
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    border: 1px solid #888;
-    width: 30%;
-    height: 75%;
+    border: 0px solid #888;
+    border-radius: 5px;
+    width: 625px;
+    height: 550px;
 }
 
 #modal .gallery {
-    height: 65%;
+    height: 100%;
 }
 
-.gallery .slide {
-    background: url('../assets/images/trendr-card.png') center center / cover;
-    height: 100%;
-    width: 100%;
+#modal #carouselControl a {
+    align-items: flex-end;
 }
+
+#modal #carouselControl a .iconify{
+    height: 40px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+.gallery .modalSlide {
+    height: 550px;
+    width: 281px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+#modal .window, #carousel {
+    height: 550px
+}
+
 
 #modal .infoContainer {
-    padding: 20px;
+    padding: 5px;
+    padding-bottom: 20%;
+}
+
+#modal .infoContainer .title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #C25555;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+#modal .infoContainer .desc {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+#modal .infoContainer .rule {
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    margin-top: .75rem;
+    margin-bottom: 1rem;
+
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: #333;
     float: right;
-    font-size: 28px;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: rgb(116, 24, 24);
     text-decoration: none;
     cursor: pointer;
 }

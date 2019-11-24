@@ -21,17 +21,10 @@ var modalText = {
     desc: 'Speed Word Game',
     details:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla magni nostrum eveniet omnis iste!'
-  },
-  yelpcamp: {
-    title: 'YelpCamp',
-    desc: 'Project: Campground Reviews',
-    details:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla magni nostrum eveniet omnis iste!'
   }
 };
 
 $('#projects button').on('click', function() {
-  console.log('project button clicked' + this.id);
   loadModal(this.id);
   modal.style.display = 'block';
   modalContent.classList.add('animated', 'zoomIn');
@@ -57,4 +50,12 @@ function loadModal(id) {
   console.log($('#modal .title'));
   $('#modal .desc').text(modalText[id].desc);
   $('#modal .details').text(modalText[id].details);
+
+  $.each($('#modal .modalSlide'), function(index, value) {
+    $(this).css({
+      background: `url('./assets/images/slides/${id}-${index +
+        1}.png') no-repeat center center/cover`,
+      backgroundSize: 'cover'
+    });
+  });
 }
