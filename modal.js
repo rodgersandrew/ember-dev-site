@@ -7,20 +7,20 @@ var btn = document.getElementById('projectModalBtn');
 var btns = document.querySelectorAll('#projectModalBtn');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
+var span = document.querySelector('#modalClose');
 
 var modalText = {
   trendr: {
     title: 'Trendr',
     desc: 'Trending Topics Analysis',
     details:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla magni nostrum eveniet omnis iste!'
+      'Trendr is a react native app which scrapes trending topics from top sites and performs sentiment analysis on those topics allowing users to see sentiment breakdown across sources.'
   },
   wordtrain: {
     title: 'WordTrain',
     desc: 'Speed Word Game',
     details:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla magni nostrum eveniet omnis iste!'
+      'A word game where the player must enter a valid word starting with the last letter of the previous word. They must battle the game clock and word clock while trying to add complex words in order to get the highest score!'
   }
 };
 
