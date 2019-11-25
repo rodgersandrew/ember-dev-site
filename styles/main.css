@@ -1,350 +1,381 @@
-body {
-    padding-bottom: 15px;
-}
-
+/* body {
+  padding-bottom: 15px;
+} */
 
 .navbar {
-    background-color: transparent;
-    padding-top: 0;
-    padding-bottom: 0;
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }
 
 .navbar.scrolled {
-    background: rgb(194, 85, 85);
-    transition: background 400ms;
+  background: rgb(194, 85, 85);
+  transition: background 400ms;
 }
 
 #brandImage {
-    height: 35px;
+  height: 35px;
 }
 
 .jumbotron {
-    border-bottom: 2px solid rgba(143, 34, 9, 0.2);
-    border-top: 2px solid rgba(143, 34, 9, 0.2);
-    height: 30%;
-    background-image: url("../assets/images/jumbotron_bg.png");
-    background-size: cover;
-    min-height: 30vh;
+  border-bottom: 2px solid rgba(143, 34, 9, 0.2);
+  border-top: 2px solid rgba(143, 34, 9, 0.2);
+  height: 30%;
+  background-image: url("../assets/images/jumbotron_bg.png");
+  background-size: cover;
+  min-height: 30vh;
 }
 
 .main {
-    height: 100vh;
-    background-image: url('../assets/images/main-bg-darker.png');
-    background-size: cover;
-
+  height: 100vh;
+  background-image: url("../assets/images/main-bg-darker.png");
+  background-size: cover;
 }
 
 .mainTitle {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    color: rgb(226, 226, 226);
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8),
-        0px 4px 3px rgba(0, 0, 0, 0.4),
-        0px 8px 13px rgba(0, 0, 0, 0.1),
-        0px 18px 23px rgba(0, 0, 0, 0.1);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: rgb(226, 226, 226);
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8), 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 #mainDetails {
-    width: 200px;
-    height: 30%;
+  width: 200px;
+  height: 30%;
 }
 
 .workTitle {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
-    font-size: 2.4rem;
-    color: #e5e5e5;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-        0px 8px 13px rgba(0, 0, 0, 0.1),
-        0px 18px 23px rgba(0, 0, 0, 0.1);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  color: #e5e5e5;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .iconify {
-    width: 24px;
-    height: 24px;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-        0px 8px 13px rgba(0, 0, 0, 0.1),
-        0px 18px 23px rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.scrolled #github {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar.scrolled a:hover #github {
-    color: #333;
+  color: #333;
 }
 
 .navbar.scrolled #upwork {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar.scrolled a:hover #upwork {
-    color: #333;
+  color: #333;
 }
 
 .navbar.scrolled #linkedIn {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar.scrolled a:hover #linkedIn {
-    color: #333;
+  color: #333;
 }
 
 #github {
-
-    color: #9452F7;
+  color: #9452f7;
 }
 
 a:hover #github {
-    color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 #upwork {
-    color: #37A000;
+  color: #37a000;
 }
 
 a:hover #upwork {
-    color: #6FDA44;
+  color: #6fda44;
 }
 
 #linkedIn {
-    color: #1977B5;
+  color: #1977b5;
 }
 
 a:hover #linkedIn {
-    color: #1f9ede;
+  color: #1f9ede;
 }
 
 #stackContainer {
-    padding-right: 50px;
-    padding-left: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .row i {
-    font-size: 2rem;
-    color: #fff;
+  font-size: 2rem;
+  color: #fff;
 }
 
 .stackIcon {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .stackRow {
-    background-color: #8d4c4c;
-    min-width: 200px;
+  background-color: #8d4c4c;
+  min-width: 200px;
 }
 
 .stackTextCol {
-    background-color: #AA4C4C;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+  background-color: #aa4c4c;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .stackTextContainer {
-    background-color: #AA4C4C;
+  background-color: #aa4c4c;
 }
 
 .stackText {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-
 .portfolioImg {
-    width: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #about {
-    background-color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 120px;
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 #aboutMe {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    margin-bottom: 0;
-    margin-top: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 #headshot {
-    max-width: 100%;
-    max-height: 100%;
-    padding: 5%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5%;
 }
 
 #projects {
-    background-color: #f6f6f6;
-    padding-top: 60px;
-    padding-bottom: 120px;
+  background-color: #f6f6f6;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  -webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 1);
+}
+
+.contact .form-group {
+  margin-bottom: 0.5rem;
+}
+
+.contact .form-control {
+  background-color: #333;
+  border: 0px solid #555;
+  border-radius: 0;
+  color: #f6f6f6;
+}
+
+.contact #success {
+  display: none;
+}
+
+.contact #submit {
+  width: 25%;
+  float: right;
+  border-width: 2px;
+  border-radius: 0;
+  font-weight: 500;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .divider {
-    width: 80px;
-    height: 3px;
-    background-color: #555;
+  width: 80px;
+  height: 3px;
+  background-color: #555;
 }
 
 .sectionTitle {
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 2rem;
-    color: #555;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 2rem;
+  color: #555;
+}
+
+#contactTitle {
+  color: #f6f6f6;
+}
+
+#contactRule {
+  background-color: #f6f6f6;
 }
 
 .projectCard {
-    background-color: #f6f6f6;
-    min-height: 325px;
+  background-color: #f6f6f6;
+  min-height: 325px;
 }
 
 .projectTitle {
-    font-family: 'Raleway';
-    font-size: 1.75rem;
-    font-weight: 500;
+  font-family: "Raleway";
+  font-size: 1.75rem;
+  font-weight: 500;
 }
 
 .projectStack {
-    font-family: 'Raleway';
-    font-size: .9rem;
-    font-weight: 200;
+  font-family: "Raleway";
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 
 .projectInfoBtn {
-    width: 35%;
-    z-index: 1;
-    opacity: 0;
+  width: 35%;
+  z-index: 1;
+  opacity: 0;
 }
 
 /* Shadows */
 .shadow-inset-left {
-    -moz-box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
-    -webkit-box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
-    box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
+  -moz-box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
+  -webkit-box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
+  box-shadow: inset 2px 0px 2px rgba(0, 1, 1, 0.26);
 }
 
 .border-inset-left-dark {
-    box-shadow: inset 2px 0px 0px #555;
+  box-shadow: inset 2px 0px 0px #555;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1045;
-    /* Sit on top */
-    padding-top: 65px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.75);
-    /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1045;
+  /* Sit on top */
+  padding-top: 65px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.75);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    border: 0px solid #888;
-    border-radius: 5px;
-    width: 625px;
-    height: 550px;
+  background-color: #fefefe;
+  margin: auto;
+  border: 0px solid #888;
+  border-radius: 5px;
+  width: 625px;
+  height: 550px;
 }
 
 #modal .gallery {
-    height: 100%;
+  height: 100%;
 }
 
 #modal #carouselControl a {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
-#modal #carouselControl a .iconify{
-    height: 40px;
-    width: 50px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 5px;
+#modal #carouselControl a .iconify {
+  height: 40px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
 }
 
 .gallery .modalSlide {
-    height: 550px;
-    width: 281px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    
+  height: 550px;
+  width: 281px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-#modal .window, #carousel {
-    height: 550px
+#modal .window,
+#carousel {
+  height: 550px;
 }
-
 
 #modal .infoContainer {
-    padding: 5px;
-    padding-bottom: 20%;
+  padding: 5px;
+  padding-bottom: 20%;
 }
 
 #modal .infoContainer .title {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: #C25555;
-    font-size: 2rem;
-    line-height: 1;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #c25555;
+  font-size: 2rem;
+  line-height: 1;
 }
 
 #modal .infoContainer .desc {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    color: #666;
-    font-size: 1rem;
-    line-height: 1;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 #modal .infoContainer .rule {
-    width: 100%;
-    height: 1px;
-    background-color: #777;
-    margin-top: .75rem;
-    margin-bottom: 1rem;
-
+  width: 100%;
+  height: 1px;
+  background-color: #777;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 /* The Close Button */
 .close {
-    color: #333;
-    float: right;
-    font-size: 2.5rem;
-    font-weight: bold;
+  color: #333;
+  float: right;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: rgb(116, 24, 24);
-    text-decoration: none;
-    cursor: pointer;
+  color: rgb(116, 24, 24);
+  text-decoration: none;
+  cursor: pointer;
 }
