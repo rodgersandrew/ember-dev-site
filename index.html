@@ -38,15 +38,6 @@
         <!-- Modal content -->
         <div class="d-flex flex-row modal-content">
             <div class="flex-fill px-0 gallery">
-                <!-- <div class="window">
-                    <div id="carousel" style="left: -281px;">
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
-                    </div>
-                    <span class="iconify" data-icon="el:chevron-left" data-inline="false"></span>
-                    <span class="iconify" data-icon="el:chevron-right" data-inline="false"></span>
-                </div> -->
                 <div id="carouselControl" class="carousel slide" data-ride="carousel" data-interval="8000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -90,6 +81,18 @@
         <div class="container">
             <a href="./" class="navbar-brand"><img class="img-fluid" src="./assets/images/ember_logo_red.png" alt=""
                     id='brandImage'></a>
+            <ul class="navbar-nav mr-auto align-items-center" id="page-links">
+                <li class="nav-item px-3">
+                    <div class="section-link" destination="about">ABOUT</div>
+                </li>
+                <li class="nav-item px-3">
+                    <div class="section-link" destination="projects">PORTFOLIO</div>
+                </li>
+                <li class="nav-item px-3">
+                    <div class="section-link" destination="contact">CONTACT</div>
+                </li>
+
+            </ul>
             <div class="navbar-nav ml-auto">
                 <div class="row mr-0" id="headerSocials">
                     <a class="nav-item nav-link" id="githubLink" href="https://github.com/rodgersandrew"
@@ -235,7 +238,7 @@
     <section class="text-center" id="projects">
         <div class="container">
             <div class="py-5" id="projectsHeader">
-                <h2 class="sectionTitle" id="projectsTitle">PROJECTS</h2>
+                <h2 class="sectionTitle" id="projectsTitle">PORTFOLIO</h2>
                 <hr class="divider" id="projectsRule">
             </div>
             <div class="row mt-5 px-5">
@@ -274,30 +277,33 @@
     </section>
 
     <!-- Contact Section -->
-    <div class="contact bg-dark">
+    <div class="contact" id="contact">
         <section class="text-center">
-            <div class="py-5" id="contactHeader">
+            <div class="py-3" id="contactHeader">
                 <h2 class="sectionTitle" id="contactTitle">CONTACT</h2>
                 <hr class="divider" id="contactRule">
             </div>
+            <div class="question mb-4" id="contactQuestion">Want to collaborate or have a question?</div>
             <div class="container d-flex justify-content-center">
-                <form class="w-50" id="contact-form">
+                <form id="contact-form" action="https://formspree.io/xvogpezd" method="POST">
                     <div class="form-group">
                         <input class="form-control mb-1" placeholder="Name" type="text" name="name" required="">
                         <input class="form-control mb-1" placeholder="Your Email" type="email" name="email" required="">
                         <textarea class="form-control" placeholder="Your Message" type="text" name="message"></textarea>
                     </div>
-                    <div id="success">
-                        <div>Your message was sent successfully. Thank you!
-                            <span id="close" class="mdi mdi-close"></span>
-                        </div>
-                    </div>
-                    <input class="btn btn-outline-light" type="submit" id="submit" value="SUBMIT">
+                    <p id="form-status"></p>
+                    <!-- <input class="btn btn-outline-light" type="submit" id="submit" value="SUBMIT"> -->
+                    <button class="btn btn-outline-light" id="submit">SUBMIT</button>
                 </form>
             </div>
         </section>
     </div>
 
+    <footer class="d-flex text-center justify-content-center">
+        <div class="btn d-flex btn-outline-light justify-content-center align-items-center"><span class="iconify"
+                id='to-top-btn' data-icon="mdi:arrow-collapse-up" data-inline="false" data-flip="horizontal"></span>
+        </div>
+    </footer>
 
 
 

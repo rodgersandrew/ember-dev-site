@@ -89,6 +89,29 @@
   color: #333;
 }
 
+.navbar #page-links {
+  display: none;
+  opacity: 0;
+}
+
+.nav-item .section-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav .active {
+  border-bottom: 1px solid #fff
+}
+
+.nav-item div:hover:not(.active) {
+  color: #222;
+  cursor: pointer;
+}
+
 #github {
   color: #9452f7;
 }
@@ -188,11 +211,23 @@ a:hover #linkedIn {
 }
 
 .contact {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 80px;
   -webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 1);
   box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 1);
+  background-color: #260d0d;
+}
+
+.contact .question {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+#contact-form {
+  width: 45%;
 }
 
 .contact .form-group {
@@ -200,8 +235,8 @@ a:hover #linkedIn {
 }
 
 .contact .form-control {
-  background-color: #333;
-  border: 0px solid #555;
+  background-color: #130606;
+  border: 0px solid rgba(255, 255, 255, .1);
   border-radius: 0;
   color: #f6f6f6;
 }
@@ -218,6 +253,10 @@ a:hover #linkedIn {
   font-weight: 500;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.contact textarea {
+  min-height: 130px;
 }
 
 .divider {
@@ -241,6 +280,10 @@ a:hover #linkedIn {
   background-color: #f6f6f6;
 }
 
+#form-status {
+  color: #f6f6f6;
+}
+
 .projectCard {
   background-color: #f6f6f6;
   min-height: 325px;
@@ -262,6 +305,29 @@ a:hover #linkedIn {
   width: 35%;
   z-index: 1;
   opacity: 0;
+}
+
+
+footer {
+  background: #C25555;
+  padding: 40px 0 60px 0;
+  position: relative;
+}
+
+/* footer div .btn{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+} */
+
+footer .iconify {
+  font-size: 2.5rem;
+  border-radius: 100%;
+  color: #fff;
+}
+
+footer div:hover .iconify{
+  color: #C25555;
 }
 
 /* Shadows */
