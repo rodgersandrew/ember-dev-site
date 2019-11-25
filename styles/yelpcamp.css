@@ -24,18 +24,19 @@ padding-bottom: 70px;
     font-size: 2.5rem;
     font-weight: 500;
     color: #444444;
+    line-height: 1;
 }
 
 .yelpcamp h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: #fff;
 }
 
 .yelpcamp h3 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 300;
     color: #fff;
 }
@@ -52,17 +53,28 @@ padding-bottom: 70px;
     font-weight: 400;
     font-size: 1rem;
     color: #222222;
+    margin-top: 25px;
+}
+
+#tag {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #999;
 }
 
 .yelpcamp .stack {
-    width: 100%;
-    height: 80px;
+    width: 90%;
     background-color: #9d5555;
+}
+
+.stack .stackPiece {
+    margin-top: 15px;
 }
 
 .yelpcamp i {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .gallery {

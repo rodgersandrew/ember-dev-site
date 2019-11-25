@@ -59,57 +59,76 @@
 
     <div class="yelpcamp">
         <div class="container">
-            <div class="row d-flex flex-column details">
-
-                <div class="border rounded border-danger p-5">
+            <div class="row d-flex details">
+                <div class="col-8 border rounded border-danger p-5">
                     <h1 class="projectHeader">YelpCamp</h1>
-                    <p>YelpCamp was created as a training exercise for learning back-end stacks. The idea is a review
+                    <div class="mb-3" id='tag'>Bootcamp Project</div>
+                    <hr>
+                    <p id="details">YelpCamp was created as a training exercise for learning back-end stacks. The idea is a review
                         site for campgrounds where users can add new campgrounds, review and comment on existing
                         campgrounds and edit campgrounds they have posted. The campground data sits in a Mongo database
                         and all components have full CRUD functionality. Middleware exists in Express to handle
                         authentication and authorization for those CRUD capabilities. The site should be live shortly
                         once user management is fully completed. Currently any user can sign up any number of times
                         without any validation.</p>
-                    <div class="d-flex stack border border-dark rounded mt-5 align-items-center">
-                        <div class="col-3">
-                            <h2 class="my-0">Front End:</h2>
+                </div>
+                <div class="col-4 pl-5" id="frontEndStack">
+                    <div class="row h-100">
+                        <div class="col-6">
+                            <div class="row h-100">
+                                <div class="stack border border-dark rounded align-items-center">
+                                    <div class="d-flex col-12 px-0 pt-3 pb-3 justify-content-center">
+                                        <h2 class="my-0">Front End:</h2>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <div
+                                            class="d-flex flex-column stackPiece align-items-center justify-content-center">
+                                            <i class="devicon-bootstrap-plain px-5"></i>
+                                            <h3 class="my-0">BOOTSTRAP</h3>
+                                        </div>
+                                        <div
+                                            class="d-flex flex-column stackPiece align-items-center justify-content-center">
+                                            <i class="devicon-html5-plain px-5"></i>
+                                            <h3 class="my-0">HTML5</h3>
+                                        </div>
+                                        <div
+                                            class="d-flex flex-column stackPiece align-items-center justify-content-center">
+                                            <i class="devicon-css3-plain px-5"></i>
+                                            <h3 class="my-0">CSS3</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-9 d-flex align-items-center">
-                            <div class="d-flex flex-column stackPiece align-items-center justify-content-center">
-                                <i class="devicon-bootstrap-plain px-5"></i>
-                                <h3 class="my-0">BOOTSTRAP</h3>
-                            </div>
-                            <div class="d-flex flex-column stackPiece align-items-center justify-content-center">
-                                <i class="devicon-html5-plain px-5"></i>
-                                <h3 class="my-0">HTML5</h3>
-                            </div>
-                            <div class="d-flex flex-column stackPiece align-items-center justify-content-center">
-                                <i class="devicon-css3-plain px-5"></i>
-                                <h3 class="my-0">CSS3</h3>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="d-flex stack border border-dark rounded mt-4 align-items-center">
-                        <div class="col-3">
-                            <h2 class="my-0">Back End:</h2>
-                        </div>
-                        <div class="col-9 d-flex align-items-center">
-                            <div class="d-flex flex-column stackPiece align-items-center justify-content-center">
-                                <i class="devicon-express-original px-5"></i>
-                                <h3 class="my-0">EXPRESS</h3>
-                            </div>
-                            <div class="d-flex flex-column stackPiece align-items-center justify-content-center">
-                                <i class="devicon-nodejs-plain px-5"></i>
-                                <h3 class="my-0">NODE.JS</h3>
-                            </div>
-                            <div class="d-flex flex-column stackPiece align-items-center justify-content-center">
-                                <i class="devicon-mongodb-plain px-5"></i>
-                                <h3 class="my-0">MONGODB</h3>
-                            </div>
-                            <div class="d-flex flex-column stackPiece align-items-center justify-content-center">
-                                <i class="devicon-heroku-plain px-5"></i>
-                                <h3 class="my-0">HEROKU</h3>
+                        <div class="col-6">
+                            <div class="row h-100">
+                                <div class="stack border border-dark rounded align-items-center">
+                                    <div class="d-flex col-12 px-0 pt-3 pb-3 justify-content-center">
+                                        <h2 class="my-0">Back End:</h2>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <div
+                                            class="d-flex flex-column stackPiece align-items-center justify-content-center">
+                                            <i class="devicon-express-original px-5"></i>
+                                            <h3 class="my-0">EXPRESS</h3>
+                                        </div>
+                                        <div
+                                            class="d-flex flex-column stackPiece align-items-center justify-content-center">
+                                            <i class="devicon-nodejs-plain px-5"></i>
+                                            <h3 class="my-0">NODE.JS</h3>
+                                        </div>
+                                        <div
+                                            class="d-flex flex-column stackPiece align-items-center justify-content-center">
+                                            <i class="devicon-mongodb-plain px-5"></i>
+                                            <h3 class="my-0">MONGODB</h3>
+                                        </div>
+                                        <div
+                                            class="d-flex flex-column stackPiece align-items-center justify-content-center">
+                                            <i class="devicon-heroku-plain px-5"></i>
+                                            <h3 class="my-0">HEROKU</h3>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -125,22 +144,24 @@
                 </div>
                 <div class="row">
                     <div class="col-9">
-                        <img class="gallery" src="./assets/images/yelpcamp/yelpcamp-1.png" alt="">
-                        <div class="col-12 px-0 pt-3">
+                        <div class="left">
+                            <img class="gallery" src="./assets/images/yelpcamp/yelpcamp-1.png" alt="">
+                        </div>
+                        <div class="col-12 px-0 pt-3 left">
                             <img src="./assets/images/yelpcamp/yelpcamp-3.png" alt="" class="gallery">
                         </div>
                     </div>
-                    <div class="col-3 d-flex justify-content-center align-items-center">
+                    <div class="col-3 d-flex justify-content-center align-items-center right">
                         <img src="./assets/images/yelpcamp/yelpcamp-maps.png" alt="" class="gallery">
 
                     </div>
-                    <div class="col-12 pt-3">
+                    <div class="col-12 pt-3 right">
                         <img src="./assets/images/yelpcamp/yelpcamp-campground.png" alt="" class="gallery">
                     </div>
-                    <div class="col-5 pt-3">
+                    <div class="col-5 pt-3 left">
                         <img src="./assets/images/yelpcamp/yelpcamp-comments.png" alt="" class="gallery">
                     </div>
-                    <div class="col-7 pt-3">
+                    <div class="col-7 pt-3 right">
                         <img src="./assets/images/yelpcamp/yelpcamp-2.png" alt="" class="gallery">
                     </div>
                 </div>
