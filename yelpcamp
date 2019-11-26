@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151750631-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151750631-1');
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -64,7 +77,8 @@
                     <h1 class="projectHeader">YelpCamp</h1>
                     <div class="mb-3" id='tag'>Bootcamp Project</div>
                     <hr>
-                    <p id="details">YelpCamp was created as a training exercise for learning back-end stacks. The idea is a review
+                    <p id="details">YelpCamp was created as a training exercise for learning back-end stacks. The idea
+                        is a review
                         site for campgrounds where users can add new campgrounds, review and comment on existing
                         campgrounds and edit campgrounds they have posted. The campground data sits in a Mongo database
                         and all components have full CRUD functionality. Middleware exists in Express to handle
